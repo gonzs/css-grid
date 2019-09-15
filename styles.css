@@ -59,6 +59,7 @@
   color: white;
   background: coral;
 }
+
 .area .header {
   background: lightblue;
   grid-column-start: header;
@@ -88,4 +89,39 @@
 .area .footer {
   background: lightblue;
   grid-column: footer;
+}
+
+.sidebar-content {
+  /*Gral.*/
+  width: 90%;
+  max-width: 1fr;
+  border: 5px solid black;
+  margin: auto;
+  font-size: 25px;
+  line-height: 25px;
+  text-align: center;
+
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 200px);
+
+  /*Horizontal alignment*/
+  justify-items: center;
+
+  /*Vertical alignment*/
+  align-items: center;
+}
+
+.sidebar-content > div {
+  display: block;
+  padding: 20px;
+  color: white;
+  background: blue;
+}
+
+.sidebar-content .one-item {
+  background: #ff8000;
+  justify-self: stretch;
+  align-self: stretch;
 }
